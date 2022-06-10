@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Righteous&family=Roboto+Condensed:wght@400;700&display=swap");
+/*=======Variables=========*/
+/*===========formato=========*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*===========header=============*/
+.header {
+  width: 100%;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
+}
+
+/*===============login form=============*/
+.login-form-container {
+  position: fixed;
+  top: -105%;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+}
+
+.login-form-container form {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 40rem;
+}
+
+.login-form-container form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.login-form-container form .buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+  background-color: #f70451;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-form-container form h3 {
+  color: #f70451;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.login-form-container form .box {
+  margin: .7rem 0;
+  width: 100%;
+  text-transform: none;
+  color: var #5f5f5f;
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  outline: none;
+}
+
+.login-form-container form p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #5f5f5f;
+}
+
+.login-form-container form p a {
+  color: #f70451;
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-form {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+  color: #f70451;
+  cursor: pointer;
+}
+
+.login-form-container.active {
+  top: 0;
+  opacity: 1;
+}
+
+.menu__bar {
+  display: none;
+}
+
+.text__logo {
+  color: #f70451;
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 15px;
+  margin-right: 45px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #c5c5c5;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.navbar .input__container i {
+  padding-left: 25px;
+}
+
+.navbar .search {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: #eeeeee;
+  font-family: "Popins", sans-serif;
+}
+
+.navbar .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.navbar .nav__list .nav__item {
+  padding: 10px 15px;
+  color: #5f5f5f;
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+}
+
+.navbar .nav__list .nav__item .bxs-hot {
+  font-size: 15px;
+  color: #f70451;
+  margin-left: 2px;
+  text-align: center;
+}
+
+.navbar .nav__list .nav__item .bxs-down-arrow {
+  font-size: 8px;
+  color: #5f5f5f;
+  margin-left: 8px;
+}
+
+.navbar .nav__list .nav__item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+::-webkit-input-placeholder {
+  color: #5f5f5f;
+  font-size: 14px;
+  font-family: "Popins", sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #5f5f5f;
+  font-size: 14px;
+  font-family: "Popins", sans-serif;
+}
+
+::-ms-input-placeholder {
+  color: #5f5f5f;
+  font-size: 14px;
+  font-family: "Popins", sans-serif;
+}
+
+::placeholder {
+  color: #5f5f5f;
+  font-size: 14px;
+  font-family: "Popins", sans-serif;
+}
+
+.icon__container i {
+  color: #f70451;
+  font-size: 22px;
+  padding-left: 16px;
+}
+
+.icon__container .truck {
+  position: relative;
+}
+
+.icon__container span {
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5f5f5f;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+/*===================header bottom=============*/
+.header__bottom {
+  background-color: #f70451;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Poppins",sans-serif;
+  letter-spacing: 1px;
+}
+
+/*============RESPONSIVE MOBILE===========*/
+@media (max-width: 1440px) {
+  .header__top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "menu__bar logo icon__container" "navbar navbar navbar";
+  }
+  .menu__bar {
+    display: block;
+    color: #f70451;
+    font-size: 30px;
+    margin-right: 10px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: menu__bar;
+    font-weight: 900;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: logo;
+    margin-bottom: 10px;
+  }
+  .logo .text__logo {
+    font-size: 1.1rem;
+    letter-spacing: 10px;
+  }
+  .navbar {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: navbar;
+  }
+  .navbar .input__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar .nav__list .nav__item {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #000;
+  }
+  .nav__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .nav__list.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .icon__container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: icon__container;
+  }
+  .icon__container .heart {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

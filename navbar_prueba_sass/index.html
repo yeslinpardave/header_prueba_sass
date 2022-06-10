@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+
+            <div class="menu__bar" id="menu__bar">
+                <i class='bx bx-menu' id="menu-btn"></i>
+            </div>
+
+            <div class="logo" id="logo">
+                <p class="text__logo">HOME </br>DESIGN</p>
+            </div>
+    
+            <nav class="navbar" id="navbar">
+                <div class="input__container">
+                    <input type="search" class="search" placeholder="¿Qué estas buscando?"><i class='bx bx-search' ></i>
+                </div>                
+                
+                <ul class="nav__list">                    
+                    <li class="nav__item"><a href="#">Rebajas<i class='bx bxs-hot' ></i></a></li>
+                    <li class="nav__item"><a href="#">Colecciones</a></li>
+                    <li class="nav__item"><a href="#">Recámaras</a></li>
+                    <li class="nav__item"><a href="#">Comedores</a></li>
+                    <li class="nav__item"><a href="#">Salas</a></li>
+                    <li class="nav__item"><a href="#">Complementarios</a></li>
+                    <li class="nav__item"><a href="#">Decoración</a></li>
+                    <li class="nav__item"><a href="#">Blogs<i class='bx bxs-down-arrow' ></i></a></li>
+                </ul>
+            </nav>
+    
+            <div class="icon__container" id="icon__container">
+                <a href="#" class="user" id="user"><i class='bx bx-user'></i></a>
+                <a href="#" class="heart"><i class='bx bx-heart' ></i></a>
+                <a href="#" class="map"><i class='bx bx-map' ></i></a>
+                <a href="#" class="truck" id="truck">
+                    <i class='bx bxs-truck' ></i>
+                    <span>1</span>
+                </a>              
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <p>COMPRA HOY Y OBTEN 5% ADICIONAL SOLO COMO CLIENTE PREMIER</p>
+        </div>
+    </header>
+
+    <!--=============LOGIN FORM=============-->
+    <div class="login-form-container">
+        <span id="close-login-form" class="bx bx-x"></span>
+
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <input type="submit" value="Login Now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">Google</a>
+                <a href="#" class="btn">Facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create one</a></p>
+
+        </form>
+        
+    </div>
+
+    <!--===============POPUP=======-->
+    
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
